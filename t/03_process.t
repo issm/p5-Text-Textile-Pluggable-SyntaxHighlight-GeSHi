@@ -56,7 +56,8 @@ print 'hello';
         my $text = "bc. $code";
         my $html = $textile->process($text);
         like $html, qr{^<pre class="text" style="font-family:monospace;">};
-        like $html, qr{<p>print &#39;hello&#39;;</p>};
+        #like $html, qr{<p>print &#39;hello&#39;;</p>};
+        like $html, qr{<p>print 'hello';</p>};
     };
 };
 
@@ -71,7 +72,7 @@ print 'hello';
         my $text = "bc[perl]. $code";
         my $html = $textile->process($text);
         like $html, qr{^<pre class="perl" style="font-family:monospace;">};
-        like $html, qr{<p>print &#39;hello&#39;;</p>};
+        like $html, qr{<p>print 'hello';</p>};
     };
 };
 

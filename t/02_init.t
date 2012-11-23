@@ -7,7 +7,7 @@ ok ! exists new_object()->{'plugin.geshi'};
 my $textile = new_object( plugins => [qw/ SyntaxHighlight::GeSHi /] );
 is_deeply (
     $textile->{__modules},
-    [qw/ Text::Textile::Pluggable::Plugin::SyntaxHighlight::GeSHi /],
+    [qw/ Text::Textile::Pluggable::SyntaxHighlight::GeSHi /],
 );
 
 ok exists $textile->{'plugin.geshi'};

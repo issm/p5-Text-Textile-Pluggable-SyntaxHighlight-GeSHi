@@ -1,6 +1,6 @@
 use inc::Module::Install;
-name 'Text-Textile-Pluggable-Plugin-SyntaxHighlight-GeSHi';
-all_from 'lib/Text/Textile/Pluggable/Plugin/SyntaxHighlight/GeSHi.pm';
+name 'Text-Textile-Pluggable-SyntaxHighlight-GeSHi';
+all_from 'lib/Text/Textile/Pluggable/SyntaxHighlight/GeSHi.pm';
 
 requires 'Text::Textile::Pluggable' => '0.03';
 requires 'Encode';

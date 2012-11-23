@@ -1,4 +1,4 @@
-package Text::Textile::Pluggable::Plugin::SyntaxHighlight::GeSHi;
+package Text::Textile::Pluggable::SyntaxHighlight::GeSHi;
 use 5.008001;
 use strict;
 use warnings;
